@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Pradnyesh Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/97b0fd98de.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/L.png">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Fresher</p>
+            <h1>Hello, I'm <span> Pradnyesh </span><br> Lembhe from Satara.</h1>
+
+        </div>
+    </div>
+</div>
+<!--------------------------------------------about---------------------------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/User.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Pradnyesh Lembhe. I'm a recent graduate with a degree in Computer Engineering. I'm passionate about Web Developent, Cloud Computing, Software Development, and I'm eager to start my career in [your field].
+                   I'm a hard worker and I'm always willing to learn new things. I'm also a creative thinker and I'm always looking for new ways to solve problems. In my free time, I enjoy reading books, playing games etc. I also love to travel and explore new cultures. I'm excited to share my work with you, and I hope you enjoy it. Thank you for taking the time to learn more about me.</p>
+                   <div class="tab-titles">
+                    <P class="tab-links active-link" onclick="opentab('skills')">Skills</P>
+                    <P class="tab-links" onclick="opentab('certification')">Certification</P>
+                    <p class="tab-links" onclick="opentab('projects')">Pojects</p>
+                    <P class="tab-links" onclick="opentab('education')">Education</P>
+                    
+                   </div> 
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML, CSS</span><br>Website Development And Designing</li>
+                        <li><span>MySQL</span><br>Database Development</li>
+                        <li><span>C/C++</span><br>Good Knowledge of C/C++</li>
+                        <li><span>Python</span><br>Good Knowledge of Python</li>
+                        <li><span>Networking</span><br>Network Troubleshooting</li>
+                        <li><span>Cloud Computing</span><br>Good Knowledge of Cloud Computing</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="certification">
+                    <ul>
+                        <li><span>Networking Technologies</span><br>Knowledge of Networking</li>
+                        <li><span>Information Security Professional</span><br>Database Development</li>
+                        <li><span>HTML/CSS</span><br>Website Development</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>NAS Server</span><br>Developed NAS Server With Encryption and Decryption of storage</li>
+                        <li><span>Medical Data Transmission</span><br>Developed a project of Private and Secure Medical Data Transmission using QR Code</li>
+                        <li><span>Android Quiz</span><br>This project is regarding to MCQ Quiz System application on Android</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>BE Computer Science Engineering from Pune</li>
+                        <li><span>2020</span><br>Diploma in Computer Science Engineering from Satara</li>
+                        <li><span>2018</span><br>HSC from Wai</li>
+                        <li><span>2016</span><br>SSC from Satara</li>
+                        
+                    </ul>
+                   </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------------------------my porjects------------------------------------------------------>
+
+<div id="project">
+    <div class="container">
+        <h1 title="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-laptop-medical"></i>
+                <h2>Medical Data Transmission </h2>
+                <p>The project is regarding private and securing patients data and Analysis of 
+                    previous records with their medical bills using QR Code. Technologies used in 
+                    project are Java, MySQL database</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Android Quiz System</h2>
+                <p>The Project is regarding MCQ Quiz System on Android. It is used as to solving a 
+                    mock test on android device which helps students to improve their knowledge 
+                    using this project. Technologies used in project Java, XML and MySQL etc
+                    </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>NAS Server</h2>
+                <p>In this project we developed a NAS (Network Attached Storage) Server
+                    which is used to store the data with encryption and decryption of the data. 
+                    While we implemented it we used AES algorithm for Encryption and 
+                    Decryption.
+                    </p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!--------------------------Contact form----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>pradnyeshlembhe08@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7038438806</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/pradnyesh-lembhe-1b9026238?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfpQsLodNTZmAvxYQT1PChQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/pradnesh.lembhe.14"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/jr.pradnyesh?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                    
+                </div>
+                <a href="CV_PRADNYESH.pdf" download="" class="btn">Download CV</a>
+            
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzxxGzjORepc5vkHQPhxsVMRsvWXXwE2noSX65roCs-o1pBSTN_weJL17P0XQTECMsF/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully...!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+
+
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
